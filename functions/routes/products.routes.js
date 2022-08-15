@@ -4,7 +4,6 @@ const router = Router();
 const admin = require('firebase-admin');
 const db = admin.firestore();
 
-
 router.post('/api/products', async(req, res) => {
     try {
         await db.collection("products")
